@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="keywords" content="创维TV">
+    <meta name="description" content="创维TV">
+	<title>MEMC</title>
+	<!-- build:css ./styles/common/common_bundle.css -->
+	<link rel="stylesheet" href="./styles/common/cn.css">
+	<link rel="stylesheet" href="./styles/common/swiper.min.css">
+	<!-- endbuild -->
+
+	<!-- build:css ./styles/module/module_bundle.css -->
+	<link rel="stylesheet" href="./styles/module/memc.css">
+	<link rel="stylesheet" href="./styles/module/music.css">
+	<!-- endbuild -->
+	
+</head>
+<body>
+	
+	<main class="main_container">
+		<div class="swiper-container swiper_main_container" id="swiperMainContainer">
+	        <div class="swiper-wrapper">
+	        	<div class="swiper-slide">
+	            	@@include('./pages/music.html')
+	            </div>
+	            <div class="swiper-slide">
+	            	@@include('./pages/memc.html')
+	            </div>
+	            
+	        </div>
+	    </div>
+	</main>
+
+	@@include('./include/footer.html')
+
+	<!-- build:js ./js/common/bundle.js -->
+	<script src="./js/common/zepto-1.2.0.min.js"></script>
+	<script src="./js/common/fastclick.js"></script>
+	<script src="./js/common/swiper.min.js"></script>
+	<script src="./js/common/main.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:js ./js/module/bundle.js -->
+	<script src="./js/module/memc.js"></script>
+	<!-- endbuild -->
+	
+</body>
+</html>

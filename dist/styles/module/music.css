@@ -1,0 +1,74 @@
+.swiper-slide-active .page_2 {
+    background: url('../images/music_bg.jpg') 0 0 no-repeat #1A1A1A;
+    background-size: 100% auto;
+    text-align: center;
+}
+
+.swiper-slide-active .page_2 .logo_img_box {
+    position: relative;
+    margin: 0 auto;
+}
+
+.swiper-slide-active .page_2 .logo {
+    width: 70%;
+}
+
+.swiper-slide-active .page_2 .title_img {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.swiper-slide-active .page_2 .wave_hover {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background: url('../images/wave.png') center no-repeat;
+    background-size: auto 100%;
+    animation: wave 2s infinite ease-in;
+    -webkit-animation: wave 2s infinite ease-in;
+    -moz-animation: wave 2s infinite ease-in;
+    -o-animation: wave 2s infinite ease-in;
+}
+
+@keyframes wave {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-moz-keyframes wave {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes wave {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-o-keyframes wave {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
