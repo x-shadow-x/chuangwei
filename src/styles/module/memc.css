@@ -9,7 +9,7 @@
 	background-size: 100% auto;
 }
 
-.swiper-slide-active .page_1 .title_img {
+.page_1 .title_img {
 	position: absolute;
 	left: 50%;
 	top: 4%;
@@ -19,6 +19,15 @@
 	-webkit-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	width: 50%;
+	opacity: 0;
+}
+
+.swiper-slide-active .page_1 .title_img {
+	opacity: 1;
+    transition: opacity 2s ease .1s;
+	-moz-transition: opacity 2s ease .1s;
+	-webkit-transition: opacity 2s ease .1s;
+	-o-transition: opacity 2s ease .1s;
 }
 
 .swiper-slide-active .page_1 .blur_img {
