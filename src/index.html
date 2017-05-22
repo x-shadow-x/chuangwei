@@ -20,6 +20,7 @@
 	<!-- build:css ./styles/module/module_bundle.css -->
 	<link rel="stylesheet" href="./styles/module/memc.css">
 	<link rel="stylesheet" href="./styles/module/music.css">
+	<link rel="stylesheet" href="./styles/module/cqb.css">
 	<!-- endbuild -->
 	
 </head>
@@ -28,13 +29,15 @@
 	<main class="main_container">
 		<div class="swiper-container swiper_main_container" id="swiperMainContainer">
 	        <div class="swiper-wrapper">
-	        	<div class="swiper-slide">
-	            	@@include('./pages/music.html')
-	            </div>
-	            <div class="swiper-slide">
+	        	<div class="swiper-slide" data-init="true">
 	            	@@include('./pages/memc.html')
 	            </div>
-	            
+	        	<div class="swiper-slide">
+	            	@@include('./pages/cqb.html')
+	            </div>
+	            <div class="swiper-slide">
+	            	@@include('./pages/music.html')
+	            </div>
 	        </div>
 	    </div>
 	</main>

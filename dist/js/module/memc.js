@@ -3,7 +3,9 @@ $(function() {
 	var processBtnEl = document.getElementById("processBtn");
 	var blurPicEl = document.getElementById("blurPic");
 	var oW,
-		maxW = $('#process').width();
+		minW = $('#blurTip').width() + 20,
+		maxW = $(window).width() * 0.8 - $('#clearTip').width() - 20,
+		steps = maxW - minW;
 
 	processBtnEl.addEventListener("touchstart", function(e) {
 		var touches = e.touches[0];
@@ -14,15 +16,14 @@ $(function() {
 	processBtnEl.addEventListener("touchmove", function(e) {
 		var touches = e.touches[0];
 		var oLeft = touches.clientX - oW;
-		if (oLeft < 0) {
-			oLeft = 0;
+		if (oLeft < minW) {
+			oLeft = minW;
 		} else if (oLeft > maxW) {
 			oLeft = maxW;
-		} else if (oLeft > document.documentElement.clientWidth - processBtnEl.offsetWidth) {
-			oLeft = (document.documentElement.clientWidth - processBtnEl.offsetWidth);
 		}
 		processBtnEl.style.left = oLeft + "px";
-		blurPicEl.style.opacity = 1 - oLeft / maxW;
+		blurPicEl.style.opacity = 1 - (oLeft - minW) / steps;
+		$('.swiper-slide-active').removeClass('init');
 	}, false);
 
 	processBtnEl.addEventListener("touchend", function() {
