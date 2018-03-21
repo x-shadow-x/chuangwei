@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="keywords" content="创维TV">
+    <meta name="description" content="创维TV">
+	<title>MEMC</title>
+	<link rel="stylesheet" href="./styles/common/common_bundle.css">
+
+	<link rel="stylesheet" href="./styles/module/module_bundle.css">
+	
+</head>
+<body>
+	
+	<main class="main_container">
+		<div class="swiper-container swiper_main_container" id="swiperMainContainer">
+	        <div class="swiper-wrapper">
+	        	<div class="swiper-slide" data-init="true">
+	            	<section id="page13" class="page_13 page_view">
+	<img data-src="./styles/images/memc_bg.jpg" class="bg">
+	<img data-src="./styles/images/memc_tv_empty.png" class="memc_tv_empty">
+	<img data-src="./styles/images/memc_tv_pic.jpg" class="memc_tv_pic">
+	<img data-src="./styles/images/memc_bg_blur.jpg" class="blur_pic" id="blurPic">
+	<img data-src="./styles/images/memc_title.png" alt="memc标题" class="title_img">
+	<img data-src="./styles/images/memc_title_2.png" alt="memc标题" class="title_img2">
+	<div class="process_box">
+		<div class="process" id="process">
+			<span class="blur_tip" id="blurTip">非4K MEMC+</span>
+			<span class="process_btn" id="processBtn"></span>
+			<span class="clear_tip" id="clearTip">4K MEMC+</span>
+			
+		</div>
+		<span class="process_tip">滑动按钮，体验4K MEMC+</span>
+	</div>
+</section>
+	            </div>
+	        	<div class="swiper-slide">
+	            	<section id="page6" class="page_6 page_view">
+	<img data-src="./styles/images/cqb_bg.jpg" class="bg">
+	<img data-src="./styles/images/cqb_title.png" alt="超轻薄标题" class="title_img">
+	<img data-src="./styles/images/cqb_logo.png" alt="logo" class="logo">
+	<div class="tv_box">
+		<img data-src="./styles/images/cqb_tv_empty.png" class="cqb_tv_empty_hover">
+		<img data-src="./styles/images/cqb_tv_pic.gif" class="cqb_tv_pic">
+		<img data-src="./styles/images/light_point.png" class="light_point_hover">
+		<span class="point point1"></span>
+		<span class="point point2"></span>
+		<span class="point point3"></span>
+
+		<div class="space">
+	        <div class="stars">
+	            <div class="star"></div>
+	            <div class="star pink"></div>
+	            <div class="star blue"></div>
+	            <div class="star yellow"></div>
+	        </div>
+	    </div>
+	</div>
+</section>
+	            </div>
+	            <div class="swiper-slide">
+	            	<section id="page14" class="page_14 page_view">
+	<img data-src="./styles/images/music_bg.jpg" class="bg">
+	<div class="logo_img_box">
+		<img data-src="./styles/images/music_logo.jpg" alt="logo" class="logo">
+		<span class="wave_hover"></span>
+	</div>
+	<img data-src="./styles/images/music_title.png" alt="music标题" class="title_img">
+</section>
+	            </div>
+	        </div>
+	    </div>
+	</main>
+
+	<section id="loadingToast" class="loading_toast" alt="加载层">
+    <div class="weui_toast">
+        <i class="weui_loading weui-icon_toast"></i>
+        <p class="weui_toast_content">正在加载...</p>
+    </div>
+</section>
+<section class="js_dialog" id="iosDialog" alt="提示框">
+    <div class="weui_dialog">
+        <div class="weui_dialog_bd dialog-content">弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内</div>
+        <div class="weui_dialog_ft">
+            <a href="javascript:;" class="weui_dialog_btn weui_dialog_btn_primary" onclick="hideDialog()">知道了</a>
+        </div>
+    </div>
+</section>
+<section class="landscape" alt="竖屏提示">
+    <div class="icon_landscape"></div>
+    <div class="text">为了更好的体验，请使用竖屏浏览</div>
+</section>
+
+	<script src="./js/common/bundle.js"></script>
+
+	<script src="./js/module/bundle.js"></script>
+	
+</body>
+</html>

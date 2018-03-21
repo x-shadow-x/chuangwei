@@ -1,0 +1,135 @@
+.page_14 {
+    background: #000;
+}
+
+.page_14 .bg {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 0;
+}
+
+.play.swiper-slide-active .page_14 .bg {
+    opacity: 1;
+    transition: opacity 1s ease .5s;
+    -moz-transition: opacity 1s ease .5s;
+    -webkit-transition: opacity 1s ease .5s;
+    -o-transition: opacity 1s ease .5s;
+}
+
+.page_14 .logo_img_box {
+	position: relative;
+    margin: 0 auto;
+    opacity: 0;
+    margin-top: 10%;
+}
+
+.play.swiper-slide-active .page_14 .logo_img_box {
+    opacity: 1;
+    transition: opacity 2s ease 1s;
+	-moz-transition: opacity 2s ease 1s;
+	-webkit-transition: opacity 2s ease 1s;
+	-o-transition: opacity 2s ease 1s;
+}
+
+.swiper-slide-active .page_14 .logo {
+    width: 90%;
+}
+
+.page_14 .title_img {
+	margin: 0 auto;
+    width: 60%;
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    transform: scale(0,0);
+    -moz-transform: scale(0,0); 
+    -webkit-transform: scale(0,0); 
+    -o-transform: scale(0,0); 
+}
+
+.play.swiper-slide-active .page_14 .title_img {
+    opacity: 1;
+    transform: scale(1, 1);
+    -moz-transform: scale(1, 1); 
+    -webkit-transform: scale(1, 1); 
+    -o-transform: scale(1, 1); 
+    transition: opacity 1s ease .1s, transform 1s;
+	-moz-transition: opacity 1s ease .1s, -moz-transform 1s;
+	-webkit-transition: opacity 1s ease .1s, -webkit-transform 1s;
+	-o-transition: opacity 1s ease .1s, -o-transform 1s;
+}
+
+.page_14 .wave_hover {
+	position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background: url('../images/wave.png') center no-repeat;
+    background-size: auto 100%;
+    animation: wave 2s infinite ease-in;
+    -webkit-animation: wave 2s infinite ease-in;
+    -moz-animation: wave 2s infinite ease-in;
+    -o-animation: wave 2s infinite ease-in;
+    opacity: 0;
+}
+
+.swiper-slide-active .page_14 .wave_hover {
+    opacity: 1;
+    transition: opacity 2s ease 1.2s;
+	-moz-transition: opacity 2s ease 1.2s;
+	-webkit-transition: opacity 2s ease 1.2s;
+	-o-transition: opacity 2s ease 1.2s;
+}
+
+@keyframes wave {
+    from {
+        width: 0;
+        opacity: 1;
+    }
+    to {
+        width: 100%;
+        opacity: .2;
+    }
+}
+
+@-moz-keyframes wave {
+    from {
+        width: 0;
+        opacity: 1;
+    }
+    to {
+        width: 100%;
+        opacity: .2;
+    }
+}
+
+@-webkit-keyframes wave {
+    from {
+        width: 0;
+        opacity: 1;
+    }
+    to {
+        width: 100%;
+        opacity: .2;
+    }
+}
+
+@-o-keyframes wave {
+    from {
+        width: 0;
+        opacity: 1;
+    }
+    to {
+        width: 100%;
+        opacity: .2;
+    }
+}
